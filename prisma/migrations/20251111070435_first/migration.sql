@@ -22,3 +22,4 @@ CREATE TABLE "Bookmark" (
 
     CONSTRAINT "Bookmark_pkey" PRIMARY KEY ("id")
 );
+ 
