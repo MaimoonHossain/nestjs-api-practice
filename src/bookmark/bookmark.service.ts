@@ -60,8 +60,10 @@ export class BookmarkService {
       throw new ForbiddenException('Access denied');
     }
 
-    return this.prisma.bookmark.delete({
+    await this.prisma.bookmark.delete({
       where: { id: bookmarkId },
     });
+
+    return { message: 'Bookmark deleted successfully' };
   }
 }
